@@ -11,6 +11,7 @@ namespace ConsoleApp1
     {
         /// <summary>
         /// Реализация кастомной коллекции без IEnumerable и IEmumerator
+        /// необязательно наследовать интерфейс но обязательно реализовать GetEnumerator
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)

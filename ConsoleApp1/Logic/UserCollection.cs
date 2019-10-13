@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Logic
 {
+    // простая пользовательская коллекция
     public class UserCollection
     {
-        List<User> user = new List<User>
+        readonly List<User> user = new List<User>
         {
             new User(name:"Tom" , age: 27),
             new User(name:"Clark", age:30),
@@ -16,6 +17,8 @@ namespace ConsoleApp1.Logic
         };
 
         int position = -1;
+
+        //реализация IEnumerator
         public bool MoveNext()
         {
             if (position < user.Count-1)
