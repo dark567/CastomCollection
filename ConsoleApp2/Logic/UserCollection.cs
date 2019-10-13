@@ -64,7 +64,10 @@ namespace ConsoleApp2.Logic
             return this;
         }
 
-        public void Dispose()
+        /// <summary>
+        /// реализация интерфейса IDisposable
+        /// </summary>
+        void IDisposable.Dispose()
         {
             ((IEnumerator)this).Reset();
         }
