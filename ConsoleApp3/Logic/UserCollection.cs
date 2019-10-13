@@ -19,6 +19,7 @@ namespace ConsoleApp3.Logic
         };
 
         int position = -1;
+
         public IEnumerator GetEnumerator()
         {
             //---------------- 1 вариант
